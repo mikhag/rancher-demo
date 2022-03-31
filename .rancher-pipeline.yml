@@ -23,7 +23,7 @@ stages:
       tag: testrepo:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: dockerhub
-- name: Deploy
-  steps:
-  - applyYamlConfig:
-      path: ./deployment.yaml
+#- name: Deploy
+#  steps:
+#  - applyYamlConfig:
+#      path: ./deployment.yaml
