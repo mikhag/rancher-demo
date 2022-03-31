@@ -20,7 +20,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: php-example:${CICD_EXECUTION_SEQUENCE}
+      tag: testrepo:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: dockerhub
 - name: Deploy
   steps:
   - applyYamlConfig:
